@@ -18,6 +18,12 @@ document.addEventListener('DOMContentLoaded', function() {
         retina_detect: true
     });
 
+    // Funcionalidad del menú "hamburguesa" para dispositivos móviles
+    document.getElementById('mobile-menu').addEventListener('click', function() {
+        var navList = document.getElementById('nav-list');
+        navList.classList.toggle('show');
+    });
+
     // Datos de ejemplo
     const dates = ['2023-05-01', '2023-05-02', '2023-05-03', '2023-05-04', '2023-05-05'];
     const prices = [100, 102, 98, 103, 105];
