@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción al Análisis Técnico</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="bg-particles" class="bg-particles"></div>
+
+    <header>
+        <nav class="container">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#que-es">¿Qué es?</a></li>
+                <li><a href="#graficos">Gráficos</a></li>
+                <li><a href="#indicadores">Indicadores</a></li>
+                <li><a href="#aplicacion">Aplicación</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h1 class="floating">Introducción al Análisis Técnico</h1>
+                <p>Lee Gráficos y Utiliza Indicadores para Decisiones de Trading Más Informadas</p>
+            </div>
+        </section>
+
+        <section id="que-es" class="section container">
+            <h2>¿Qué es el Análisis Técnico?</h2>
+            <p>El análisis técnico es una metodología utilizada para evaluar y predecir los movimientos del mercado observando las acciones de precios pasadas y los patrones de mercado. A diferencia del análisis fundamental, que se centra en los datos económicos y las noticias, el análisis técnico se basa en el estudio de gráficos y estadísticas.</p>
+            <div id="example-chart" class="chart-container"></div>
+        </section>
+
+        <section id="graficos" class="section container">
+            <h2>Los Gráficos: La Base del Análisis Técnico</h2>
+            <p>Los gráficos son la herramienta central del análisis técnico. Pueden parecer intimidantes al principio, con todas esas líneas y colores, pero con un poco de práctica, te darás cuenta de que son increíblemente útiles para tomar decisiones informadas sobre tus inversiones. Entender los diferentes tipos de gráficos y cómo interpretarlos es esencial para cualquier trader o analista que desee tener éxito en el mercado.</p>
+
+            <!-- Fila superior: Explicaciones -->
+            <div class="chart-types">
+                <div class="chart-type">
+                    <h3>Gráfico de Líneas</h3>
+                    <p class="chart-description">El gráfico de líneas es una herramienta sencilla y efectiva para visualizar la tendencia de un activo a lo largo del tiempo, representando sus precios de cierre. Es especialmente útil para identificar patrones generales y movimientos a largo plazo.</p>
+                </div>
+
+                <div class="chart-type">
+                    <h3>Gráfico de Barras</h3>
+                    <p class="chart-description">El gráfico de barras proporciona una representación más detallada que el gráfico de líneas, mostrando los precios de apertura, máximo, mínimo y cierre de un activo en un solo gráfico. Es útil para analizar la volatilidad y los puntos de inflexión en un mercado.</p>
+                </div>
+
+                <div class="chart-type">
+                    <h3>Gráfico de Velas</h3>
+                    <p class="chart-description">El gráfico de velas combina las ventajas de los gráficos de líneas y barras, proporcionando una visualización rica que refleja las emociones del mercado a través de sus cuerpos y sombras. Es crucial para los traders que buscan señales precisas de entrada y salida.</p>
+                </div>
+            </div>
+
+            <!-- Fila inferior: Gráficos -->
+            <div class="chart-types">
+                <div class="chart-type">
+                    <div class="chart-container" id="lineChart"></div>
+                </div>
+
+                <div class="chart-type">
+                    <div class="chart-container" id="barChart"></div>
+                </div>
+
+                <div class="chart-type">
+                    <div class="chart-container" id="candlestickChart"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="indicadores" class="section container">
+            <h2>Indicadores Técnicos: Tus Mejores Aliados</h2>
+            <p>Los indicadores técnicos son cálculos basados en el precio, volumen u otra variable de mercado que ayudan a identificar tendencias y posibles puntos de entrada y salida.</p>
+            <h3>Indicadores Básicos para Comenzar</h3>
+            <ul>
+                <li>Media Móvil (Moving Average): Suaviza los datos de precios para identificar la dirección de la tendencia.</li>
+                <li>Índice de Fuerza Relativa (RSI): Indica si un activo está sobrecomprado o sobrevendido.</li>
+                <li>Bandas de Bollinger: Miden la volatilidad y ayudan a identificar posibles reversiones de tendencia.</li>
+            </ul>
+            <div id="indicator-chart" class="chart-container"></div>
+        </section>
+
+        <section id="aplicacion" class="section container">
+            <h2>Aplicando el Análisis Técnico en el Mundo Real</h2>
+            <p>El análisis técnico no es solo teoría; es una práctica diaria para muchos traders exitosos. Ya sea que estés operando con acciones, divisas o criptomonedas, los principios son los mismos.</p>
+            <h3>Caso de Estudio</h3>
+            <p>Durante un período de alta volatilidad en el mercado de criptomonedas, utilicé el RSI para identificar cuando Bitcoin estaba sobrevendido. Esto me permitió entrar en una posición justo antes de que el precio comenzara a recuperarse, resultando en una operación rentable.</p>
+            <div id="case-study-chart" class="chart-container"></div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
